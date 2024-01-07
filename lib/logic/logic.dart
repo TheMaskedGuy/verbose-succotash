@@ -210,7 +210,7 @@ Map<String, dynamic> sanitize(Map<String, dynamic> input) {
       print(
           'Warning: Key "$newKey" starts with a number, which is not allowed, thus it will modified to ensure no conflict.');
 
-      newKey = newKey.replaceFirst(r'[0-9]', 'mod');
+      newKey = newKey.replaceFirst(RegExp(r'[0-9]'), 'mod');
     }
     if (value is Map<String, dynamic>) {
       result[newKey] = sanitize(value);
