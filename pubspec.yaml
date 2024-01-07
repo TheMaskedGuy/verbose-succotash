@@ -1,0 +1,28 @@
+name: code_gen
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.1 <4.0.0'
+
+codeGen:
+  src: './jsons/'
+  out: './lib/Models/'
+
+dependencies:
+  dson_adapter: ^1.2.0+2
+  flutter:
+    sdk: flutter
+  path: any
+  yaml: any
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
