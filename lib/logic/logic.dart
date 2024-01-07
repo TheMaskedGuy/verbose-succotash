@@ -227,7 +227,5 @@ Map<String, dynamic> sanitize(Map<String, dynamic> input) {
     }
   });
 
-  //
-
   return result;
 }
